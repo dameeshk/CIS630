@@ -1,2 +1,2 @@
 # CIS630
-This repo contains our progress to buildin a vision based clothing appllication
+This repo contains our progress to building a vision based clothing appllication
