@@ -1,0 +1,65 @@
+
+Config:
+
+Yaml files:
+YAML files, with the extension .yaml or .yml, are a type of data serialization language. 
+This means they are used to store data in a human-readable and machine-readable format, making it easy for both people and computers to understand and work with.
+
+config.yaml -> contains the configuration information for various stages of the project/pipeline.
+params.yaml -> contains the training arguments for the model we are going to build.
+
+Research folder:
+
+This is where we can create the trail python notebooks to validate data, clean data, build models, and then train the model. Once we are good with python notebooks
+we can then convert that code into modular coding.
+
+src folder:
+
+This is where we can create all the important python scripts for the designing the project. This folder contains the following files:
+
+    COMPONENTS:
+    components.py: This is where we create multiple component script files like data ingestion, data validation, data transformation, model building, etc.
+
+    CONFIG:
+    configuration.py:   Here we write the configuration manager scripts for all the phases of the project.
+
+    CONSTANTS:
+    Here we add the constant paths like config.yaml and params.yaml so that we can use these attributes declared all over the project.
+
+    ENTITY:
+    Here we write the script for creating the entity class for all the phases of the project. Like DataIngestionConfig class.
+
+    LOGGING:
+    Here we write the code for logging the project process into the log file.
+
+    PIPELINE: 
+    Here we write the code for the pipeline for each phase and also call the classes defined in components.py.
+
+    UTILS:
+    common.py: This is where we create basic functionalities script like creating directories, reading files, getting the size of the files, etc.
+
+app.py:
+
+Here we write the code for the application that will be used as the front end of the project.
+
+DockerFile:
+
+This is generally used for version control but we are doing the version control using github repository.
+
+main.py:
+This is where we write the calling functions for all the phases of the project. We can run this file from the terminal. After activating the VITON enivronment.
+
+README.md:
+This is where we are going to explain the project step bu step for understanding purpose. We also guide how to execute the project.
+
+requirements.txt:
+This file contains all the required libraries to be installed for the project development. I have installed multiple other libraries as of now. 
+
+setup.py:
+This code snippet is required if you want to distribute your Python project as an installable package. 
+In summary, using setuptools is essential for anyone who wants to share their Python project with others or use it in larger projects effectively.
+It simplifies the distribution process and ensures a smooth experience for users.
+
+template.py:
+This script contains the code for the setup of coding environment and files.
+
